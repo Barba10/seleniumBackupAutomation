@@ -1,0 +1,36 @@
+image: repo.djdev.org/docker-public/buildbox:jdk8
+
+variables:
+  MAVEN_CLI_OPTS: "-s .mvn/settings.xml --batch-mode"
+  MAVEN_OPTS: "-Dmaven.repo.local=.mvn/repository"
+
+stages:
+  - build
+    
+test:
+  stage: build
+  tags:
+    - voyager
+  script:
+    - run_test
+  artifacts:
+    when: always
+    paths:
+      - target/surefire-reports/*
+      - reports/
+    reports:
+      junit: target/surefire-reports/TEST-*.xml
+
+      
+#--------------------------------------------------------------------------
+
+.ci_functions: &ci_functions |
+  set +x
+
+  run_test(){
+    mvn install $MAVEN_CLI_OPTS
+  }
+
+
+before_script:
+  - *ci_functions
