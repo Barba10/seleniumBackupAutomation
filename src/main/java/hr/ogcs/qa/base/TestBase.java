@@ -86,7 +86,7 @@ public class TestBase {
 	
 //	@SuppressWarnings("deprecation")
 	public static void initialization() throws MalformedURLException{
-		String downloadFilepath = root + File.separator +  "exports";
+		String downloadFilepath = root + "/exports";
 		System.out.println(downloadFilepath);
 		HashMap<String, Object> chromePrefs = new HashMap<String, Object>();
 		chromePrefs.put("profile.default_content_settings.popups", 0);
