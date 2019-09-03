@@ -75,7 +75,7 @@ public class TestBase {
 	    	root = System.getProperty("user.dir");
 	    }
 	    else {
-	    	root = "/builds/qa/pageobjectmodel/";
+	    	root = "/builds/qa/confluencebackupautomation/";
 	    }
 	   
 		reporter = new ExtentHtmlReporter( root + "/extents/extent.html");
