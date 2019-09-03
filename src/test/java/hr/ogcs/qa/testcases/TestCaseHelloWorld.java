@@ -56,7 +56,7 @@ public class TestCaseHelloWorld extends TestBase {
 	@DataProvider(name = "TestData")
 	public Object[][] getData() throws Exception {
 
-		Object[][] testObjArray = ExcelUtils.getTableArray(root + File.separator + "TestData.xlsx", "Sheet1");
+		Object[][] testObjArray = ExcelUtils.getTableArray(root + "/TestData.xlsx", "Sheet1");
 		return (testObjArray);
 
 	}
@@ -65,9 +65,9 @@ public class TestCaseHelloWorld extends TestBase {
 	public void exportAndCopy(String data) throws Exception {
 		downloadPage.exportSpace(data);
 		Thread.sleep(5000);
-		File file = new File(root + File.separator + "exports" + File.separator + "datoteka" + date +".txt");
-		file.createNewFile();
-		DownloadPage.viewFiles(root + File.separator + "exports");
+//		File file = new File(root +  "/exports" + "/datoteka" + date +".txt");
+//		file.createNewFile();
+		DownloadPage.viewFiles(root  + "/exports");
 		Assert.assertTrue(downloadPage.checkIfFileExists());
 
 //		if(downloadPage.checkIfFileExists() != true)
@@ -79,7 +79,7 @@ public class TestCaseHelloWorld extends TestBase {
 	public void uploadToServer() throws IOException, JSchException, SftpException, InterruptedException {
 		System.out.println("Upload is starting");
 
-		TestUtil.pack(root + "\\exports", root + "\\exportedSpaces" + date + ".zip");
+		TestUtil.pack(root + "/exports", root + "/exportedSpaces" + date + ".zip");
 		System.out.println("Exports are zipped");
 
 		String user = "techuser";
@@ -100,12 +100,12 @@ public class TestCaseHelloWorld extends TestBase {
 		System.out.println("SFTP Channel created.");
 		System.out.println("SFTP Channel put.");
 
-		sftpChannel.put(root + "\\exportedSpaces" + date + ".zip", "/home/techuser");
+		sftpChannel.put(root + "/exportedSpaces" + date + ".zip", "/home/techuser");
 
 		System.out.println("File transfer");
 
-		TestUtil.deleteFile(root + "\\exportedSpaces" + date + ".zip");
-		TestUtil.cleanDirectory(root + "\\exports");
+		TestUtil.deleteFile(root + "/exportedSpaces" + date + ".zip");
+		TestUtil.cleanDirectory(root + "/exports");
 
 	}
 }

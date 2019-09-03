@@ -105,7 +105,7 @@ public class TestBase {
 			chromePrefs.put("profile.default_content_settings.popups", 0);
 			chromePrefs.put("download.default_directory", downloadFilepath);
 			options.setExperimentalOption("prefs", chromePrefs);
-			downloadFilepath = root + File.separator +  "exports";
+			downloadFilepath = root +  "/exports";
 			System.out.println(downloadFilepath);
 			options.addArguments("--no-sandbox", "--disable-setuid-sandbox");		
 			caps.setBrowserName("chrome");
