@@ -50,7 +50,7 @@ public class TestBase {
 	public static ExtentTest parentTest;
 	public static ExtentTest childTest;
 	public static ExtentTest grandChildTest;
-	private static Boolean remoteWeb = true;
+	private static Boolean remoteWeb = false;
 	public static String root;
 	public static String date = new SimpleDateFormat("dd-MM-yyyy").format(new Date());
 	
@@ -106,7 +106,7 @@ public class TestBase {
 			chromePrefs.put("download.default_directory", downloadFilepath);
 			options.setExperimentalOption("prefs", chromePrefs);
 			downloadFilepath = root +  "/exports";
-			System.out.println(downloadFilepath);
+			System.out.println(root);
 			options.addArguments("--no-sandbox", "--disable-setuid-sandbox");		
 			caps.setBrowserName("chrome");
 			caps.setPlatform(Platform.LINUX);

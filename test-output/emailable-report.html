@@ -9,47 +9,142 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num attn">1</td><td class="num attn">6</td><td class="num">286,588</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">6</td><td class="num">200,004</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="6">hr.ogcs.qa.testcases.TestCaseHelloWorld</td><td><a href="#m0">exportAndCopy</a></td><td rowspan="6">1567510441884</td><td rowspan="6">40955</td></tr><tr class="failedeven"><td><a href="#m1">exportAndCopy</a></td></tr><tr class="failedeven"><td><a href="#m2">exportAndCopy</a></td></tr><tr class="failedeven"><td><a href="#m3">exportAndCopy</a></td></tr><tr class="failedeven"><td><a href="#m4">exportAndCopy</a></td></tr><tr class="failedeven"><td><a href="#m5">exportAndCopy</a></td></tr><tr><th colspan="4">Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">hr.ogcs.qa.testcases.TestCaseHelloWorld</td><td><a href="#m6">uploadToServer</a></td><td rowspan="1">1567510559239</td><td rowspan="1">0</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="6">hr.ogcs.qa.testcases.TestCaseHelloWorld</td><td><a href="#m0">newTest</a></td><td rowspan="6">1567581653827</td><td rowspan="6">9</td></tr><tr class="failedeven"><td><a href="#m1">newTest</a></td></tr><tr class="failedeven"><td><a href="#m2">newTest</a></td></tr><tr class="failedeven"><td><a href="#m3">newTest</a></td></tr><tr class="failedeven"><td><a href="#m4">newTest</a></td></tr><tr class="failedeven"><td><a href="#m5">newTest</a></td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">hr.ogcs.qa.testcases.TestCaseHelloWorld#exportAndCopy</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>ESSEG</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">junit.framework.AssertionFailedError
-	at junit.framework.Assert.fail(Assert.java:47)
-	at junit.framework.Assert.assertTrue(Assert.java:20)
-	at junit.framework.Assert.assertTrue(Assert.java:27)
-	at hr.ogcs.qa.testcases.TestCaseHelloWorld.exportAndCopy(TestCaseHelloWorld.java:71)
+<h2>Test</h2><h3 id="m0">hr.ogcs.qa.testcases.TestCaseHelloWorld#newTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>TNT</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=76.0.3809.132)
+Build info: version: &apos;3.141.5&apos;, revision: &apos;d54ebd709a&apos;, time: &apos;2018-11-06T11:42:16&apos;
+System info: host: &apos;DESKTOP-569RHDF&apos;, ip: &apos;192.168.88.48&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;12.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 75.0.3770.140 (2d9f97485c7b..., userDataDir: C:\Users\Luka\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:57666}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 69f38029501396c29fab48f226064b9f
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy11.get(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.get(EventFiringWebDriver.java:165)
+	at hr.ogcs.qa.util.FileDownloader.downloadAFile(FileDownloader.java:179)
+	at hr.ogcs.qa.testcases.TestCaseHelloWorld.newTest(TestCaseHelloWorld.java:120)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">hr.ogcs.qa.testcases.TestCaseHelloWorld#newTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>RRT</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=76.0.3809.132)
+Build info: version: &apos;3.141.5&apos;, revision: &apos;d54ebd709a&apos;, time: &apos;2018-11-06T11:42:16&apos;
+System info: host: &apos;DESKTOP-569RHDF&apos;, ip: &apos;192.168.88.48&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;12.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 75.0.3770.140 (2d9f97485c7b..., userDataDir: C:\Users\Luka\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:57666}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 69f38029501396c29fab48f226064b9f
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy11.get(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.get(EventFiringWebDriver.java:165)
+	at hr.ogcs.qa.util.FileDownloader.downloadAFile(FileDownloader.java:179)
+	at hr.ogcs.qa.testcases.TestCaseHelloWorld.newTest(TestCaseHelloWorld.java:120)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">hr.ogcs.qa.testcases.TestCaseHelloWorld#newTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>INT</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.UnsupportedOperationException: The logger [Logger[org.apache.http.client.protocol.RequestAuthCache]@1395725953] does not seem to be location aware.
+	at org.apache.log4j.Category.log(Category.java:290)
+	at org.apache.commons.logging.impl.Log4JLogger.debug(Log4JLogger.java:155)
+	at org.apache.http.client.protocol.RequestAuthCache.process(RequestAuthCache.java:76)
+	at org.apache.http.protocol.ImmutableHttpProcessor.process(ImmutableHttpProcessor.java:132)
+	at org.apache.http.protocol.HttpRequestExecutor.preProcess(HttpRequestExecutor.java:166)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:486)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at hr.ogcs.qa.util.FileDownloader.downloader(FileDownloader.java:164)
+	at hr.ogcs.qa.util.FileDownloader.downloadFile(FileDownloader.java:78)
+	at hr.ogcs.qa.util.FileDownloader.downloadAFile(FileDownloader.java:183)
+	at hr.ogcs.qa.testcases.TestCaseHelloWorld.newTest(TestCaseHelloWorld.java:120)
 ... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">hr.ogcs.qa.testcases.TestCaseHelloWorld#exportAndCopy</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>RRT</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">junit.framework.AssertionFailedError
-	at junit.framework.Assert.fail(Assert.java:47)
-	at junit.framework.Assert.assertTrue(Assert.java:20)
-	at junit.framework.Assert.assertTrue(Assert.java:27)
-	at hr.ogcs.qa.testcases.TestCaseHelloWorld.exportAndCopy(TestCaseHelloWorld.java:71)
-... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">hr.ogcs.qa.testcases.TestCaseHelloWorld#exportAndCopy</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>TNT</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">junit.framework.AssertionFailedError
-	at junit.framework.Assert.fail(Assert.java:47)
-	at junit.framework.Assert.assertTrue(Assert.java:20)
-	at junit.framework.Assert.assertTrue(Assert.java:27)
-	at hr.ogcs.qa.testcases.TestCaseHelloWorld.exportAndCopy(TestCaseHelloWorld.java:71)
-... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">hr.ogcs.qa.testcases.TestCaseHelloWorld#exportAndCopy</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>LN</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">junit.framework.AssertionFailedError
-	at junit.framework.Assert.fail(Assert.java:47)
-	at junit.framework.Assert.assertTrue(Assert.java:20)
-	at junit.framework.Assert.assertTrue(Assert.java:27)
-	at hr.ogcs.qa.testcases.TestCaseHelloWorld.exportAndCopy(TestCaseHelloWorld.java:71)
-... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">hr.ogcs.qa.testcases.TestCaseHelloWorld#exportAndCopy</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>INT</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">junit.framework.AssertionFailedError
-	at junit.framework.Assert.fail(Assert.java:47)
-	at junit.framework.Assert.assertTrue(Assert.java:20)
-	at junit.framework.Assert.assertTrue(Assert.java:27)
-	at hr.ogcs.qa.testcases.TestCaseHelloWorld.exportAndCopy(TestCaseHelloWorld.java:71)
-... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">hr.ogcs.qa.testcases.TestCaseHelloWorld#exportAndCopy</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>TEST</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">junit.framework.AssertionFailedError
-	at junit.framework.Assert.fail(Assert.java:47)
-	at junit.framework.Assert.assertTrue(Assert.java:20)
-	at junit.framework.Assert.assertTrue(Assert.java:27)
-	at hr.ogcs.qa.testcases.TestCaseHelloWorld.exportAndCopy(TestCaseHelloWorld.java:71)
-... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">hr.ogcs.qa.testcases.TestCaseHelloWorld#uploadToServer</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method TestCaseHelloWorld.uploadToServer()[pri:0, instance:hr.ogcs.qa.testcases.TestCaseHelloWorld@5bf0d49] depends on not successfully finished methods
-... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">hr.ogcs.qa.testcases.TestCaseHelloWorld#newTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>LN</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=76.0.3809.132)
+Build info: version: &apos;3.141.5&apos;, revision: &apos;d54ebd709a&apos;, time: &apos;2018-11-06T11:42:16&apos;
+System info: host: &apos;DESKTOP-569RHDF&apos;, ip: &apos;192.168.88.48&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;12.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 75.0.3770.140 (2d9f97485c7b..., userDataDir: C:\Users\Luka\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:57666}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 69f38029501396c29fab48f226064b9f
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy11.get(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.get(EventFiringWebDriver.java:165)
+	at hr.ogcs.qa.util.FileDownloader.downloadAFile(FileDownloader.java:179)
+	at hr.ogcs.qa.testcases.TestCaseHelloWorld.newTest(TestCaseHelloWorld.java:120)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">hr.ogcs.qa.testcases.TestCaseHelloWorld#newTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>TEST</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=76.0.3809.132)
+Build info: version: &apos;3.141.5&apos;, revision: &apos;d54ebd709a&apos;, time: &apos;2018-11-06T11:42:16&apos;
+System info: host: &apos;DESKTOP-569RHDF&apos;, ip: &apos;192.168.88.48&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;12.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 75.0.3770.140 (2d9f97485c7b..., userDataDir: C:\Users\Luka\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:57666}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 69f38029501396c29fab48f226064b9f
+*** Element info: {Using=xpath, value=//a[@class=&apos;space-export-download-path&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy11.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy15.toString(Unknown Source)
+	at java.base/java.lang.String.valueOf(String.java:3042)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.toString(ExpectedConditions.java:305)
+	at java.base/java.lang.String.valueOf(String.java:3042)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:168)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:268)
+	at hr.ogcs.qa.util.FileDownloader.downloadAFile(FileDownloader.java:182)
+	at hr.ogcs.qa.testcases.TestCaseHelloWorld.newTest(TestCaseHelloWorld.java:120)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">hr.ogcs.qa.testcases.TestCaseHelloWorld#newTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>ESSEG</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=76.0.3809.132)
+Build info: version: &apos;3.141.5&apos;, revision: &apos;d54ebd709a&apos;, time: &apos;2018-11-06T11:42:16&apos;
+System info: host: &apos;DESKTOP-569RHDF&apos;, ip: &apos;192.168.88.48&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;12.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 75.0.3770.140 (2d9f97485c7b..., userDataDir: C:\Users\Luka\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:57666}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 69f38029501396c29fab48f226064b9f
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy11.get(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.get(EventFiringWebDriver.java:165)
+	at hr.ogcs.qa.util.FileDownloader.downloadAFile(FileDownloader.java:179)
+	at hr.ogcs.qa.testcases.TestCaseHelloWorld.newTest(TestCaseHelloWorld.java:120)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

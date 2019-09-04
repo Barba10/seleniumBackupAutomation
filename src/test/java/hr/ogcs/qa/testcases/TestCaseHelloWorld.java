@@ -1,18 +1,9 @@
 package hr.ogcs.qa.testcases;
 
-import static org.testng.Assert.fail;
-
-import java.io.File;
 import java.io.IOException;
 import java.net.MalformedURLException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 
-import org.apache.commons.io.FileUtils;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -35,6 +26,7 @@ public class TestCaseHelloWorld extends TestBase {
 	LoginPage loginPage;
 	DownloadPage downloadPage;
 
+
 	public TestCaseHelloWorld() {
 		super();
 	}
@@ -44,6 +36,7 @@ public class TestCaseHelloWorld extends TestBase {
 		initialization();
 //		TestUtil.deleteZippedReportDirectory();
 		loginPage = new LoginPage();
+
 		downloadPage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 
 	}
@@ -108,4 +101,7 @@ public class TestCaseHelloWorld extends TestBase {
 		TestUtil.cleanDirectory(root + "/exports");
 
 	}
+	
+	
+	
 }
