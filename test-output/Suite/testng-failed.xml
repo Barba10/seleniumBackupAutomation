@@ -5,10 +5,10 @@
     <classes>
       <class name="hr.ogcs.qa.testcases.TestCaseHelloWorld">
         <methods>
-          <include name="newTest" invocation-numbers="0 1 2 3 4 5"/>
           <include name="setUp"/>
           <include name="beforeSuite"/>
           <include name="tearDown"/>
+          <include name="exportAndCopy" invocation-numbers="0 1 2 3 4 5"/>
         </methods>
       </class> <!-- hr.ogcs.qa.testcases.TestCaseHelloWorld -->
     </classes>
