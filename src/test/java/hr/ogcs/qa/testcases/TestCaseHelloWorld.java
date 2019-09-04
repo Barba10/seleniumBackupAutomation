@@ -1,5 +1,6 @@
 package hr.ogcs.qa.testcases;
 
+import java.io.File;
 import java.io.IOException;
 import java.net.MalformedURLException;
 
@@ -58,8 +59,8 @@ public class TestCaseHelloWorld extends TestBase {
 	public void exportAndCopy(String data) throws Exception {
 		downloadPage.exportSpace(data);
 		Thread.sleep(5000);
-//		File file = new File(root +  "/exports" + "/datoteka" + date +".txt");
-//		file.createNewFile();
+		File file = new File(root +  "/exports" + "/datoteka" + date +".txt");
+		file.createNewFile();
 		DownloadPage.viewFiles(root  + "/exports");
 		Assert.assertTrue(downloadPage.checkIfFileExists());
 
