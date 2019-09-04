@@ -50,7 +50,7 @@ public class TestBase {
 	public static ExtentTest parentTest;
 	public static ExtentTest childTest;
 	public static ExtentTest grandChildTest;
-	private static Boolean remoteWeb = false;
+	private static Boolean remoteWeb = true;
 	public static String root;
 	public static String date = new SimpleDateFormat("dd-MM-yyyy").format(new Date());
 	
