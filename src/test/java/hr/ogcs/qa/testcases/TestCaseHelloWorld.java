@@ -57,51 +57,44 @@ public class TestCaseHelloWorld extends TestBase {
 
 	@Test(dataProvider = "TestData")
 	public void exportAndCopy(String data) throws Exception {
-//		downloadPage.exportSpace(data);
-//		Thread.sleep(5000);
-//		File file = new File(root +  "/exports" + "/datoteka" + date +".txt");
-//		file.createNewFile();
-		DownloadPage.viewFiles("/home/seluser/Downloads");
-//		Assert.assertTrue(downloadPage.checkIfFileExists());
-
-//		if(downloadPage.checkIfFileExists() != true)
-//			Assert.fail();
+		downloadPage.exportSpace(data);
+		Assert.assertTrue(downloadPage.checkIfFileExists());
 
 	}
 
-//	@Test(dependsOnMethods = { "exportAndCopy" })
-//	public void uploadToServer() throws IOException, JSchException, SftpException, InterruptedException {
-//		System.out.println("Upload is starting");
-//
-//		TestUtil.pack(root + "/exports", root + "/exportedSpaces" + date + ".zip");
-//		System.out.println("Exports are zipped");
-//
-//		String user = "techuser";
-//		String password = "Tg1503bacK!";
-//		String host = "85.114.45.205";
-//		int port = 22;
-//
-//		JSch jsch = new JSch();
-//		Session session = jsch.getSession(user, host, port);
-//		session.setPassword(password);
-//		session.setConfig("StrictHostKeyChecking", "no");
-//		session.connect();
-//
-//		System.out.println("Connection established.");
-//		System.out.println("Creating SFTP Channel.");
-//		ChannelSftp sftpChannel = (ChannelSftp) session.openChannel("sftp");
-//		sftpChannel.connect();
-//		System.out.println("SFTP Channel created.");
-//		System.out.println("SFTP Channel put.");
-//
-//		sftpChannel.put(root + "/exportedSpaces" + date + ".zip", "/home/techuser");
-//
-//		System.out.println("File transfer");
-//
-//		TestUtil.deleteFile(root + "/exportedSpaces" + date + ".zip");
-//		TestUtil.cleanDirectory(root + "/exports");
-//
-//	}
+	@Test(dependsOnMethods = { "exportAndCopy" })
+	public void uploadToServer() throws IOException, JSchException, SftpException, InterruptedException {
+		System.out.println("Upload is starting");
+
+		TestUtil.pack("/tmp/downloads",  "/tmp/exportedSpaces" + date + ".zip");
+		System.out.println("Exports are zipped");
+
+		String user = "techuser";
+		String password = "Tg1503bacK!";
+		String host = "85.114.45.205";
+		int port = 22;
+
+		JSch jsch = new JSch();
+		Session session = jsch.getSession(user, host, port);
+		session.setPassword(password);
+		session.setConfig("StrictHostKeyChecking", "no");
+		session.connect();
+
+		System.out.println("Connection established.");
+		System.out.println("Creating SFTP Channel.");
+		ChannelSftp sftpChannel = (ChannelSftp) session.openChannel("sftp");
+		sftpChannel.connect();
+		System.out.println("SFTP Channel created.");
+		System.out.println("SFTP Channel put.");
+		System.out.println("File transfer");
+		sftpChannel.put("/tmp/exportedSpaces" + date + ".zip", "/home/techuser");
+		System.out.println("File transfered");
+		System.out.println("File transfer");
+
+		TestUtil.deleteFile("/tmp/exportedSpaces" + date + ".zip");
+		TestUtil.cleanDirectory("/tmp/downloads");
+
+	}
 	
 	
 	

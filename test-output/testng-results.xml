@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="0" failed="6" skipped="0">
+<testng-results ignored="0" total="7" passed="0" failed="6" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-09-04T10:46:12Z" name="Suite" finished-at="2019-09-04T10:46:14Z" duration-ms="1932">
+  <suite started-at="2019-09-05T07:54:49Z" name="Suite" finished-at="2019-09-05T07:56:57Z" duration-ms="128144">
     <groups>
     </groups>
-    <test started-at="2019-09-04T10:46:12Z" name="Test" finished-at="2019-09-04T10:46:14Z" duration-ms="1932">
+    <test started-at="2019-09-05T07:54:49Z" name="Test" finished-at="2019-09-05T07:56:57Z" duration-ms="128144">
       <class name="hr.ogcs.qa.testcases.TestCaseHelloWorld">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:hr.ogcs.qa.testcases.TestCaseHelloWorld@2b71e916]" started-at="2019-09-04T10:45:57Z" name="beforeSuite" finished-at="2019-09-04T10:45:58Z" duration-ms="544" status="PASS">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:hr.ogcs.qa.testcases.TestCaseHelloWorld@5bf0d49]" started-at="2019-09-05T07:54:39Z" name="beforeSuite" finished-at="2019-09-05T07:54:39Z" duration-ms="549" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:hr.ogcs.qa.testcases.TestCaseHelloWorld@2b71e916]" started-at="2019-09-04T10:45:58Z" name="setUp" finished-at="2019-09-04T10:46:12Z" depends-on-methods="hr.ogcs.qa.base.TestBase.beforeSuite" duration-ms="14259" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:hr.ogcs.qa.testcases.TestCaseHelloWorld@5bf0d49]" started-at="2019-09-05T07:54:39Z" name="setUp" finished-at="2019-09-05T07:54:49Z" depends-on-methods="hr.ogcs.qa.base.TestBase.beforeSuite" duration-ms="9915" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="exportAndCopy(java.lang.String)[pri:0, instance:hr.ogcs.qa.testcases.TestCaseHelloWorld@2b71e916]" started-at="2019-09-04T10:46:14Z" name="exportAndCopy" data-provider="TestData" finished-at="2019-09-04T10:46:14Z" duration-ms="13" status="FAIL">
+        <test-method signature="exportAndCopy(java.lang.String)[pri:0, instance:hr.ogcs.qa.testcases.TestCaseHelloWorld@5bf0d49]" started-at="2019-09-05T07:54:51Z" name="exportAndCopy" data-provider="TestData" finished-at="2019-09-05T07:55:11Z" duration-ms="19483" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -27,7 +27,7 @@
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
 at hr.ogcs.qa.pages.DownloadPage.viewFiles(DownloadPage.java:139)
-at hr.ogcs.qa.testcases.TestCaseHelloWorld.exportAndCopy(TestCaseHelloWorld.java:64)
+at hr.ogcs.qa.testcases.TestCaseHelloWorld.exportAndCopy(TestCaseHelloWorld.java:62)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -59,7 +59,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- exportAndCopy -->
-        <test-method signature="exportAndCopy(java.lang.String)[pri:0, instance:hr.ogcs.qa.testcases.TestCaseHelloWorld@2b71e916]" started-at="2019-09-04T10:46:14Z" name="exportAndCopy" data-provider="TestData" finished-at="2019-09-04T10:46:14Z" duration-ms="21" status="FAIL">
+        <test-method signature="exportAndCopy(java.lang.String)[pri:0, instance:hr.ogcs.qa.testcases.TestCaseHelloWorld@5bf0d49]" started-at="2019-09-05T07:55:11Z" name="exportAndCopy" data-provider="TestData" finished-at="2019-09-05T07:55:23Z" duration-ms="11861" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -71,7 +71,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
 at hr.ogcs.qa.pages.DownloadPage.viewFiles(DownloadPage.java:139)
-at hr.ogcs.qa.testcases.TestCaseHelloWorld.exportAndCopy(TestCaseHelloWorld.java:64)
+at hr.ogcs.qa.testcases.TestCaseHelloWorld.exportAndCopy(TestCaseHelloWorld.java:62)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -103,7 +103,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- exportAndCopy -->
-        <test-method signature="exportAndCopy(java.lang.String)[pri:0, instance:hr.ogcs.qa.testcases.TestCaseHelloWorld@2b71e916]" started-at="2019-09-04T10:46:14Z" name="exportAndCopy" data-provider="TestData" finished-at="2019-09-04T10:46:14Z" duration-ms="8" status="FAIL">
+        <test-method signature="exportAndCopy(java.lang.String)[pri:0, instance:hr.ogcs.qa.testcases.TestCaseHelloWorld@5bf0d49]" started-at="2019-09-05T07:55:23Z" name="exportAndCopy" data-provider="TestData" finished-at="2019-09-05T07:56:19Z" duration-ms="56921" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -115,7 +115,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
 at hr.ogcs.qa.pages.DownloadPage.viewFiles(DownloadPage.java:139)
-at hr.ogcs.qa.testcases.TestCaseHelloWorld.exportAndCopy(TestCaseHelloWorld.java:64)
+at hr.ogcs.qa.testcases.TestCaseHelloWorld.exportAndCopy(TestCaseHelloWorld.java:62)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -147,7 +147,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- exportAndCopy -->
-        <test-method signature="exportAndCopy(java.lang.String)[pri:0, instance:hr.ogcs.qa.testcases.TestCaseHelloWorld@2b71e916]" started-at="2019-09-04T10:46:14Z" name="exportAndCopy" data-provider="TestData" finished-at="2019-09-04T10:46:14Z" duration-ms="3" status="FAIL">
+        <test-method signature="exportAndCopy(java.lang.String)[pri:0, instance:hr.ogcs.qa.testcases.TestCaseHelloWorld@5bf0d49]" started-at="2019-09-05T07:56:19Z" name="exportAndCopy" data-provider="TestData" finished-at="2019-09-05T07:56:34Z" duration-ms="14275" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -159,7 +159,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
 at hr.ogcs.qa.pages.DownloadPage.viewFiles(DownloadPage.java:139)
-at hr.ogcs.qa.testcases.TestCaseHelloWorld.exportAndCopy(TestCaseHelloWorld.java:64)
+at hr.ogcs.qa.testcases.TestCaseHelloWorld.exportAndCopy(TestCaseHelloWorld.java:62)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -191,7 +191,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- exportAndCopy -->
-        <test-method signature="exportAndCopy(java.lang.String)[pri:0, instance:hr.ogcs.qa.testcases.TestCaseHelloWorld@2b71e916]" started-at="2019-09-04T10:46:14Z" name="exportAndCopy" data-provider="TestData" finished-at="2019-09-04T10:46:14Z" duration-ms="3" status="FAIL">
+        <test-method signature="exportAndCopy(java.lang.String)[pri:0, instance:hr.ogcs.qa.testcases.TestCaseHelloWorld@5bf0d49]" started-at="2019-09-05T07:56:34Z" name="exportAndCopy" data-provider="TestData" finished-at="2019-09-05T07:56:46Z" duration-ms="11879" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -203,7 +203,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
 at hr.ogcs.qa.pages.DownloadPage.viewFiles(DownloadPage.java:139)
-at hr.ogcs.qa.testcases.TestCaseHelloWorld.exportAndCopy(TestCaseHelloWorld.java:64)
+at hr.ogcs.qa.testcases.TestCaseHelloWorld.exportAndCopy(TestCaseHelloWorld.java:62)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -235,7 +235,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- exportAndCopy -->
-        <test-method signature="exportAndCopy(java.lang.String)[pri:0, instance:hr.ogcs.qa.testcases.TestCaseHelloWorld@2b71e916]" started-at="2019-09-04T10:46:14Z" name="exportAndCopy" data-provider="TestData" finished-at="2019-09-04T10:46:14Z" duration-ms="4" status="FAIL">
+        <test-method signature="exportAndCopy(java.lang.String)[pri:0, instance:hr.ogcs.qa.testcases.TestCaseHelloWorld@5bf0d49]" started-at="2019-09-05T07:56:46Z" name="exportAndCopy" data-provider="TestData" finished-at="2019-09-05T07:56:57Z" duration-ms="11828" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -247,7 +247,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
 at hr.ogcs.qa.pages.DownloadPage.viewFiles(DownloadPage.java:139)
-at hr.ogcs.qa.testcases.TestCaseHelloWorld.exportAndCopy(TestCaseHelloWorld.java:64)
+at hr.ogcs.qa.testcases.TestCaseHelloWorld.exportAndCopy(TestCaseHelloWorld.java:62)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -279,7 +279,38 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- exportAndCopy -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:hr.ogcs.qa.testcases.TestCaseHelloWorld@2b71e916]" started-at="2019-09-04T10:46:14Z" name="tearDown" finished-at="2019-09-04T10:46:14Z" duration-ms="70" status="PASS">
+        <test-method signature="uploadToServer()[pri:0, instance:hr.ogcs.qa.testcases.TestCaseHelloWorld@5bf0d49]" started-at="2019-09-05T07:56:57Z" name="uploadToServer" finished-at="2019-09-05T07:56:57Z" depends-on-methods="hr.ogcs.qa.testcases.TestCaseHelloWorld.exportAndCopy" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method TestCaseHelloWorld.uploadToServer()[pri:0, instance:hr.ogcs.qa.testcases.TestCaseHelloWorld@5bf0d49] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method TestCaseHelloWorld.uploadToServer()[pri:0, instance:hr.ogcs.qa.testcases.TestCaseHelloWorld@5bf0d49] depends on not successfully finished methods
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uploadToServer -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:hr.ogcs.qa.testcases.TestCaseHelloWorld@5bf0d49]" started-at="2019-09-05T07:56:58Z" name="tearDown" finished-at="2019-09-05T07:56:58Z" duration-ms="68" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

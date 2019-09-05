@@ -86,7 +86,7 @@ public class TestBase {
 	
 //	@SuppressWarnings("deprecation")
 	public static void initialization() throws MalformedURLException{
-		String downloadFilepath = root + "/exports";
+		String downloadFilepath = "/tmp/downloads";
 		System.out.println(downloadFilepath);
 		HashMap<String, Object> chromePrefs = new HashMap<String, Object>();
 		chromePrefs.put("profile.default_content_settings.popups", 0);
@@ -102,11 +102,10 @@ public class TestBase {
 		if(remoteWeb) {
 //			DesiredCapabilities caps = DesiredCapabilities.chrome();
 //			ChromeOptions  options = new ChromeOptions();
+			
 			chromePrefs.put("profile.default_content_settings.popups", 0);
 			chromePrefs.put("download.default_directory", downloadFilepath);
 			options.setExperimentalOption("prefs", chromePrefs);
-			downloadFilepath = root +  "/exports";
-			System.out.println(root);
 			options.addArguments("--no-sandbox", "--disable-setuid-sandbox");		
 			caps.setBrowserName("chrome");
 			caps.setPlatform(Platform.LINUX);
