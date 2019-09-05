@@ -8,8 +8,7 @@
           <include name="setUp"/>
           <include name="beforeSuite"/>
           <include name="tearDown"/>
-          <include name="uploadToServer"/>
-          <include name="exportAndCopy" invocation-numbers="0 1 2 3 4 5"/>
+          <include name="exportAndCopy"/>
         </methods>
       </class> <!-- hr.ogcs.qa.testcases.TestCaseHelloWorld -->
     </classes>

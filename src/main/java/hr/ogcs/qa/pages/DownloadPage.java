@@ -105,7 +105,7 @@ public class DownloadPage extends TestBase {
 		long t= System.currentTimeMillis();
 		long end = t+25000;
 		
-		File dir = new File("/tmp/downloads");
+		File dir = new File("/tmp/downloads/");
 		while (test == false && (System.currentTimeMillis() < end)) {
 			FilenameFilter filter = new FilenameFilter() {
 				public boolean accept(File dir, String name) {
@@ -147,4 +147,6 @@ public class DownloadPage extends TestBase {
 	}
 
 
+	
+	
 }
