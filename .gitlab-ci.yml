@@ -2,7 +2,7 @@ image: repo.djdev.org/docker-public/buildbox:jdk8
 
 variables:
   MAVEN_CLI_OPTS: "-s .mvn/settings.xml --batch-mode"
-  MAVEN_OPTS: "-Dmaven.repo.local=.mvn/repository"
+  MAVEN_OPTS: "-Dmaven.repo.local=/ogcs-cache/repository"
 
 stages:
   - build
